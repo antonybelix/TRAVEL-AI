@@ -1,60 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #667eea, #764ba2);
+  background: linear-gradient(135deg, #5f7cff, #8f5fff);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
 }
 
+/* Main Card */
 .container {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    color: Green;
+  background: #ffffff;
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
-
+/* Title */
 h1 {
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: #111827;
 }
 
 p {
   text-align: center;
-  color: #555;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 16px;
 }
 
+/* Labels */
 label {
   display: block;
   margin-top: 12px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
 }
 
-input, select, button {
+/* Inputs */
+input,
+select {
   width: 100%;
-  padding: 10px;
+  padding: 11px;
   margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  transition: 0.2s ease;
 }
 
+/* Focus */
+input:focus,
+select:focus {
+  border-color: #5f7cff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(95, 124, 255, 0.15);
+}
+
+/* Button */
 button {
-  background: #667eea;
-  color: white;
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 10px;
   border: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  background: #5f7cff;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.25s ease;
 }
 
+/* Hover */
 button:hover {
-  background: #5a67d8;
+  background: #4f6df5;
+  transform: translateY(-1px);
 }
 
+/* Message */
 #message {
-  margin-top: 15px;
+  margin-top: 12px;
   text-align: center;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
 }
+
